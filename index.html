@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a> 
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>            
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li> 
+            <li><a href="#">Contact</a></li>          
+        </ul>
+    </nav>
+
+    <!------------------- HOME PAGE ------------------- -->
+    <section class="home">
+        <div class="img_section">
+            <div class="pic">
+                <img src="mypic1.png" alt="My Picture"> <!-- Correct relative path -->
+            </div>
+        </div> 
+
+        <div class="home-intro">
+            <h1>Dilshan Madhuksha</h1>
+            <h2>I'm a 
+                <span class="text"></span>
+            </h2>
+            <p>
+                A skilled front-end developer with a strong foundation in programming, computer science, and statistics. 
+                Proficient in creating user-friendly interfaces using React.js, HTML, CSS, and JavaScript, 
+                with a focus on problem-solving and collaboration to deliver efficient, user-centric solutions.
+            </p>
+            <div class="social_media">
+                <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bx-envelope"></i></a>
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            </div>
+            <div class="cv">
+                <a href="My_CV.pdf" download="Dilshan_Madhuksha_CV.pdf">Download CV</a>
+            </div>        
+        </div> 
+    </section>
+    <!------------------- ABOUT PAGE ------------------- -->
+    <section class="about-section">
+            <div class="about_intro">
+                <h1>About<span>Me</span></h1>
+                <h2>Frontend Developer</h2>
+                <p>A strong background in computer science, programming,
+                    and statistics has been built, supported by experience 
+                    in IT projects, statistical analysis, and research. 
+                    Expertise in problem-solving, collaboration, 
+                    and communication has been refined, driven by a 
+                    commitment to contributing effectively to organizational
+                    goals, both individually and as part of a team.
+                </p>         
+            </div>
+            <div class="pic_about">
+                <img src="mypic1.png" alt="My Picture"> <!-- Correct relative path -->
+            </div>
+    </section>
+    <!------------------- Skills PAGE ------------------- -->
+    <h1 class="sub_title">My <span>Skiils</span></h1>
+
+    <section class="skills_section">
+        <h1>Technical Skills</h1>
+        <div class="container" id="skills">
+            <div class="stat">
+                <h2><u>Statical analysis Tool</u></h2>
+                <ul>
+                    <li>Mini tab</li>
+                    <li>RStudio</li>
+                    <li>PowerBI</li>
+                    <li>Python</li>
+                    <li>Microsoft Office Package
+                        <p>(Word,excel,PowerPoint)</p>
+                    </li>
+                </ul>  
+            </div>
+            <div class="cs">
+                <h2><u>Programming Language</u></h2>
+                <div class="sections">
+                    <div class="section1">
+                        <div class="lan">
+                            <i class='bx bxl-html5' style='color:#be4545'  ></i>
+                            <h5>HTML</h5>
+                        </div>
+                        <div class="lan">
+                            <i class='bx bxl-css3' style='color:#2d8db9' ></i>
+                            <h5>CSS</h5>
+                        </div>
+                        <div class="lan">
+                            <i class='bx bxl-javascript' style='color:#d0db39' ></i>
+                            <h5>JavaScript</h5>
+                        </div>
+                        <div class="lan">
+                            <i class='bx bxl-java' style='color:#c4d82b' ></i>
+                            <h5>Java</h5>
+                        </div>
+                    </div>
+                    <div class="section2">
+                        <div class="lan">
+                            <i class='bx bxl-python' style='color:#387ab3' ></i>
+                            <h5>Python</h5>
+                        </div>
+                        <div class="lan">
+                            <i class='bx bxl-php' style='color:#229da3' ></i>
+                            <h5>PHP</h5>
+                        </div>
+                        <div class="lan">
+                            <i class='bx bxl-mongodb' style='color:#e6dd43' ></i>
+                            <h5>MongoDB</h5>
+                        </div>    
+                        <div class="lan">
+                            <i class='bx bxl-react' style='color:#b5562d'></i>
+                            <h5>React</h5>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </section>
+    <!------------------- CONTACT PAGE ------------------- -->
+
+    <section class="contact_page">  
+        <h1>Contact</h1>
+        <div class="contact">  
+            <div class="contact">
+                <div class="form">
+                    <form action="send-email.php" method="POST">
+                        <div class="form_section">
+                            <div class="name">
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="gender">
+                                <label for="gender">Gender:</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="gmail">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="phone_no">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="message">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Enter your message here" required></textarea>
+                            </div>
+                        </div>
+                        <div class="button_section">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+              
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
